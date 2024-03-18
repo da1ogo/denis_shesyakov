@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игровой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать на  сайт!</h1>
+    </header>
+    <nav>
+        <button onclick="goTo('home')">Главная</button>
+        <button onclick="goTo('games')">Игры</button>
+        <button onclick="goTo('about')">О нас</button>
+          <button onclick="goTo('contact')">Контакты</button>
+    </nav>
+    <section>
+        <h2>Популярные игры</h2>
+        <div class="game">
+            <h3>Fortnite</h3>
+            <p>Fortnite - это многопользовательская игра в жанре "королевской битвы", разработанная компанией Epic Games.</p>
+            <button onclick="playGame('Fortnite')">Играть в Fortnite</button>
+        </div>
+        <div class="game">
+            <h3>Minecraft</h3>
+            <p>Minecraft - это игра, в которой игроки строят и разрушают различные виды блоков в трехмерном мире.</p>
+            <button onclick="playGame('Minecraft')">Играть в Minecraft</button>
+        </div>
+        <div class="game">
+            <h3>Among Us</h3>
+            <p>Among Us - это многопользовательская игра, в которой игроки должны обнаружить предателя среди экипажа космического корабля.</p>
+            <button onclick="playGame('Among Us')">Играть в Among Us</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Сайт с играми &copy;</p>
+    </footer>
+
+    <script>
+        function playGame(gameName) {
+            alert('Запущена игра: ' + gameName);
+            // В этой функции можно добавить дополнительную логику для перехода к игре или другим действиям
+        }
+
+        function goTo(page) {
+            if (page === 'home') {
+                alert('Переход на Главную страницу');
+                // Здесь можно добавить код для перехода на Главную страницу
+            } else if (page === 'games') {
+                alert('Переход на страницу с Играми');
+                // Здесь можно добавить код для перехода на страницу с Играми
+            } else if (page === 'about') {
+                alert('Переход на страницу О нас');
+                // Здесь можно добавить код для перехода на страницу О нас
+            }
+			 else if (page === 'contact') {
+                alert('Переход на страницу контакты');
+                // Здесь можно добавить код для перехода на страницу О нас
+            }
+        }
+    </script>
+</body>
+</html>
